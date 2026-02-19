@@ -1,22 +1,22 @@
 class StackSync < Formula
   desc "A CLI tool for managing portainer stacks"
   homepage "https://github.com/kyeotic/stack-sync"
-  version "0.3.7"
+  version "0.3.8"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kyeotic/stack-sync/releases/download/v#{version}/stack-sync-aarch64-apple-darwin.tar.gz"
-      sha256 "7b1ce14f287e14a3092c981c2e760e9f156cd53a1f7ff6827f10201cab3bbeb8"
+      sha256 "2486352864b041e8f2cadcffe6aee9e68ba7dc65187a51624f99119e0f31e210"
     else
       url "https://github.com/kyeotic/stack-sync/releases/download/v#{version}/stack-sync-x86_64-apple-darwin.tar.gz"
-      sha256 "d0aa4c893a2896d67d4de9043ba994e87742ab366f9eec5875052e4324d6951e"
+      sha256 "c1969ff8a3f54d61537a48b086d2ea357ec0f9c34f8cd19534216c4f169510c1"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/kyeotic/stack-sync/releases/download/v#{version}/stack-sync-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "a7adcb81af610331e3eefd215681681ed52398927baf36b6edcf66a3e7d2a4bd"
+      sha256 "c860b3856182141c622b3cb7574617175a21e1625993fe5843cd5b57acde3c56"
     end
   end
 
